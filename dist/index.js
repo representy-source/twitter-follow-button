@@ -24,10 +24,12 @@ class TwitterFollow extends _representySourceTwitterWidgetBase2.default {
     super('follow-button', options, ['size', 'showScreenName', 'dnt', 'lang', 'showCount']);
   }
 
+  // eslint-disable-next-line class-methods-use-this
   getHref() {
     return 'https://twitter.com/<%= username %>';
   }
 
+  // eslint-disable-next-line class-methods-use-this
   getContent() {
     return 'Follow @<%= username %>';
   }
